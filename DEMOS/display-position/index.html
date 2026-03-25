@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo de Display y Position en CSS</title>
+  <style>
+    /* Estilos generales para los cuadros */
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Ejemplos de display */
+    .block {
+      display: block; /* Ocupa todo el ancho disponible y fuerza un salto de línea */
+      background: teal;
+    }
+
+    .inline {
+      display: inline; /* Solo ocupa el ancho necesario y no fuerza salto de línea */
+      background: orange;
+    }
+
+    .inline-block {
+      display: inline-block; /* Como inline, pero permite ancho y alto */
+      background: purple;
+    }
+
+    /* Ejemplos de position */
+    .relative {
+      position: relative; /* Se mueve respecto a su posición original */
+      bottom: 10px;
+      right: 20px;
+      background: green;
+    }
+
+    .absolute-container {
+      position: relative; /* Contenedor de referencia para elementos absolutos */
+      background: lightgray;
+      height: 150px;
+    }
+
+    .absolute {
+      position: absolute; /* Se posiciona relativo al primer ancestro con position distinto de static */
+      top:10px;
+      right: 10px;
+      background: red;
+    }
+
+    .fixed {
+      position: fixed; /* Siempre se queda en la misma posición en la pantalla */
+      bottom: 0px;
+      right: 0px;
+      background: blue;
+    }
+
+    .sticky {
+      position: sticky; /* Se comporta como relative hasta alcanzar un punto y luego se "pega" */
+      top: 0;
+      background: gold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplos de CSS: Display y Position</h1>
+
+  <!-- SECCIÓN DISPLAY -->
+  <h2>Propiedad display</h2>
+
+  <!-- Display: block -->
+  <div class="box block">
+    display: block
+  </div>
+
+  <!-- Display: inline -->
+  <span class="box inline">
+    inline
+  </span>
+
+  <!-- Display: inline-block -->
+  <span class="box inline-block">
+    inline-block
+  </span>
+
+  <!-- SECCIÓN POSITION -->
+  <h2>Propiedad position</h2>
+
+  <!-- Position: relative -->
+  <div class="box relative">
+    relative
+  </div>
+
+  <!-- Contenedor con position: relative -->
+  <div class="absolute-container">
+    <!-- Position: absolute -->
+    <div class="box absolute">
+      absolute
+    </div>
+  </div>
+
+  <!-- Position: fixed -->
+  <div class="box fixed">
+    fixed
+  </div>
+
+  <!-- Position: sticky (pegajoso) -->
+  <div class="box sticky">
+    sticky
+  </div>
+
+  <p style="height: 1000px;">Desplaza hacia abajo para ver el efecto de sticky y fixed.</p>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de CSS Grid 4x4</title>
+  <style>
+    .grid-container {
+      display: grid;
+      /* Crea 4 columnas de igual tamaño */
+      grid-template-columns: repeat(4, 1fr); 
+      /* Define el espacio entre celdas */
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .producto {
+      background-color: #e0e0e0;
+      border: 2px solid #333;
+      padding: 30px;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galería de Productos (Grid 4x4)</h1>
+
+  <div class="grid-container">
+    <div class="producto">1</div>
+    <div class="producto">2</div>
+    <div class="producto">3</div>
+    <div class="producto">4</div>
+    <div class="producto">5</div>
+    <div class="producto">6</div>
+    <div class="producto">7</div>
+    <div class="producto">8</div>
+    <div class="producto">9</div>
+    <div class="producto">10</div>
+    <div class="producto">11</div>
+    <div class="producto">12</div>
+    <div class="producto">13</div>
+    <div class="producto">14</div>
+    <div class="producto">15</div>
+    <div class="producto">16</div>
+  </div>
+
+</body>
+</html>

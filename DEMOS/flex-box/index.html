@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Básico</title>
+    <style>
+      .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ddd;
+        padding: 10px; 
+      }
+
+      .item {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+      }
+      /* contenedor nowrap */
+      .contenedor2 {
+        display: flex;
+        flex-wrap:wrap;
+        gap: 20px;
+        background-color: #7786ce;
+      }
+
+      .item2 {
+        background-color: #d01f1f;
+        color: white;
+        padding: 30px;
+        margin: 5px;
+        min-width: 120px;
+      }
+
+      .contenedor3 {
+        display: flex;
+        align-items: end;
+        justify-content: end;/* Puedes cambiar a: flex-start, center, flex-end */
+        height: 200px;
+        background-color: #eee;
+        border: 2px dashed #999;
+      }
+
+      .item3 {
+        background-color: #2196f3;
+        color: white;
+        padding: 50px;
+        margin: 20px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Contenedor Flex Básico</h2>
+    <div class="contenedor">
+      <div class="item">Elemento 1</div>
+      <div class="item">Elemento 2</div>
+      <div class="item">Elemento 3</div>
+    </div>
+
+    <h2>Contenedor Flex Wrap</h2>
+    <div class="contenedor2">
+      <div class="item2">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">5</div>
+    </div>
+
+    <h2>Contenedor align items</h2>
+    <div class="contenedor3">
+      <div class="item3">Elemento 1</div>
+      <div class="item3">Elemento 2</div>
+      <div class="item3">Elemento 3</div>
+    </div>
+  </body>
+</html>
