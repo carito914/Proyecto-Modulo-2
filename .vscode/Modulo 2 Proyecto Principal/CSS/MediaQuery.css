@@ -1,0 +1,43 @@
+/* ================================
+   MEDIAQUERIES.CSS - Mobile First
+   ================================ */
+
+/* TABLET - 768px */
+@media (min-width: 768px) {
+
+  section {
+    padding: 2rem;
+  }
+
+  .imagenes-locales {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-3-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* DESKTOP - 1024px */
+@media (min-width: 1024px) {
+
+  section {
+    padding: 3rem 4rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-3-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+}
